@@ -10,8 +10,8 @@ curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.20.0
-nvm use v0.20.0
+sudo apt-get install npm
+nvm use
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
@@ -39,7 +39,7 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone https://github.com/startup-class/dotfiles.git
+git clone https://github.com/yanzhenchao/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
