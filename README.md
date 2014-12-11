@@ -14,6 +14,14 @@ ssh -T git@github.com
 sudo apt-get install -y git-core
 git clone git@github.com:yanzhenchao/setup.git
 ./setup/setup.sh   
+
+heroku login
+ssh-keygen -t rsa
+heroku keys:add
+
+git config --global user.name "Zhenchao Yan"
+git config --global user.email "yanzhenchao@gmail.com"
+git init
 ```
 
 See also http://github.com/startup-class/dotfiles and
