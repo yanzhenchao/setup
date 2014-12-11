@@ -6,7 +6,7 @@
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
 sudo apt-get install -y curl
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
+curl https://github.com/creationix/nvm/blob/master/install.sh | sh
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
