@@ -6,6 +6,11 @@ follows:
 
 ```sh
 cd $HOME
+
+ssh-keygen -t rsa -C “yanzhenchao@gmail.com”
+cat ~/.ssh/id_rsa.pub # add ssh key to github.com
+ssh -T git@github.com
+
 sudo apt-get install -y git-core
 git clone git@github.com:yanzhenchao/setup.git
 ./setup/setup.sh   
