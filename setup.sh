@@ -4,6 +4,7 @@
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
+sudo apt-get update
 sudo apt-get install -y git
 sudo apt-get install -y curl
 curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
