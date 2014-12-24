@@ -19,6 +19,11 @@ nvm alias default v0.10.27
 # http://jshint.com/
 npm install -g jshint
 
+# Install express, cheerio, commander
+npm install -g express
+npm install -g cheerio
+npm install -g commander
+
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
