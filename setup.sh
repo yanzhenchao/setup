@@ -3,9 +3,11 @@
 # for headless setup. 
 
 # Install nvm: node-version manager
+# Add a new repository for apt-get to search
 # https://github.com/creationix/nvm
 sudo apt-get update
 sudo apt-get install -y git
+sudo apt-get install -y python-software-properties python g++ make
 sudo apt-get install -y curl
 curl https://raw.githubusercontent.com/creationix/nvm/v0.21.0/install.sh | bash
 
@@ -19,8 +21,8 @@ nvm alias default v0.10.27
 # http://jshint.com/
 npm install -g jshint
 
-# Install express, cheerio, commander, restler, csv, accounting
-npm install -g express cheerio commander restler csv accounting
+# Install express, cheerio, commander, restler, csv, accounting, async, underscore, sleep
+npm install -g express cheerio commander restler csv accounting async underscore sleep
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
